@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmark-20250310-102111</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.3323)
+13th Gen Intel Core i7-13620H, 1 CPU, 16 logical and 10 physical cores
+.NET SDK 9.0.100
+  [Host]     : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+  Job-NUDCFI : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>IterationCount=10  
+</code></pre>
+
+<table>
+<thead><tr><th>Method    </th><th>Mean     </th><th>Error  </th><th>StdDev</th><th>Median   </th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Do</td><td>0.0008 ns</td><td>0.0019 ns</td><td>0.0012 ns</td><td>0.0000 ns</td><td>-</td><td>-</td>
+</tr><tr><td>ArraySort</td><td>339,340.6413 ns</td><td>1,255.5085 ns</td><td>747.1330 ns</td><td>339,478.8574 ns</td><td>2.9297</td><td>40024 B</td>
+</tr><tr><td>ListSort</td><td>338,343.9795 ns</td><td>1,472.1741 ns</td><td>973.7520 ns</td><td>338,221.5576 ns</td><td>2.9297</td><td>40056 B</td>
+</tr><tr><td>TestLinearSearch</td><td>2,647.9213 ns</td><td>11.5343 ns</td><td>7.6292 ns</td><td>2,646.6875 ns</td><td>-</td><td>-</td>
+</tr><tr><td>TestBinarySearch</td><td>11.7599 ns</td><td>0.1298 ns</td><td>0.0859 ns</td><td>11.7512 ns</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
