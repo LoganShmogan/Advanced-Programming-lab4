@@ -168,3 +168,4 @@ C:\Users\young\OneDrive\Documents\BICT\AdvancedProgramming\lab4\benchmark\obj\re
 C:\Users\young\OneDrive\Documents\BICT\AdvancedProgramming\lab4\benchmark\obj\release\net8.0\benchmark.pdb
 C:\Users\young\OneDrive\Documents\BICT\AdvancedProgramming\lab4\benchmark\obj\release\net8.0\benchmark.genruntimeconfig.cache
 C:\Users\young\OneDrive\Documents\BICT\AdvancedProgramming\lab4\benchmark\obj\release\net8.0\ref\benchmark.dll
+C:\Users\young\OneDrive\Documents\BICT\AdvancedProgramming\lab4\benchmark\obj\release\net8.0\benchmark.sourcelink.json
